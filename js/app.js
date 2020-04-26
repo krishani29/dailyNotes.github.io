@@ -39,7 +39,8 @@ function showNotes() {
 
     });
     let notesElm = document.getElementById('notes');
-    if (notes.length!= 0) {
+    if (notes.length!= 0) 
+    {
         notesElm.innerHTML = html;
     }
     else {
