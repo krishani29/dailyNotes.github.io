@@ -1,5 +1,5 @@
 console.log("welcome to notes app. this is app.js");
-showNotes();
+//showNotes();
 //if user adds a note, add into the local storage
 let addBtn = document.getElementById('addBtn');
 addBtn.addEventListener("click", function (e) {
@@ -14,7 +14,7 @@ addBtn.addEventListener("click", function (e) {
     notesobj.push(addTxt.value);
     localStorage.setItem("notes", JSON.stringify(notesobj));
     addTxt.value = "";
-    // console.log(notesobj);
+    console.log(notesobj);
     showNotes();
 })
 //function to show elements from localstorage
@@ -73,7 +73,7 @@ search.addEventListener("input", function () {
     let noteCard = document.getElementsByClassName('noteCard');
     Array.from(noteCard).forEach(function (element) {
         let cardTxt = element.getElementsByTagName("p")[0].innerText;
-        // console.log(cardTxt);
+        console.log(cardTxt);
         if (cardTxt.includes(inputVal)) {
             element.style.display = "block";
         }
