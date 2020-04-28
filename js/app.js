@@ -21,12 +21,9 @@ addBtn.addEventListener("click", function (e) {
     notesobj.push(myobj);
     localStorage.setItem("notes", JSON.stringify(notesobj));
     addTxt.value = "";
-<<<<<<< HEAD
     addTitle.value="";
     // console.log(notesobj);
-=======
-    console.log(notesobj);
->>>>>>> 1faf9f072a6e927c071b4dd42083bc87267cdb27
+
     showNotes();
 })
 //function to show elements from localstorage
@@ -51,11 +48,7 @@ function showNotes() {
 
     });
     let notesElm = document.getElementById('notes');
-<<<<<<< HEAD
     if (notes.length!=0) 
-=======
-    if (notes.length>0) 
->>>>>>> 1faf9f072a6e927c071b4dd42083bc87267cdb27
     {
         notesElm.innerHTML = html;
     }
